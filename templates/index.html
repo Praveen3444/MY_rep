@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title> index page</title>
+
+</head>
+<body>
+    <h1> Hello {{first_name}}</h1>
+
+<p> This is a fruit list
+    <ol>
+        {% for fruit in fruits %}
+        {% if fruit=="Apple"%}
+        <p>Apple is my favourite fruit</p>
+        {%endif%}
+        <li>{{fruit |reverse}}</li>
+        {%endfor%}
+
+    </ol>
+    
+</p>
+<p>{{fruits.0}}</p>
+<p>{{fruits.1}}</p>
+<p>{{fruits.2}}</p>
+    
+</body>
+</html>
